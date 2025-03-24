@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: mpok5m0qv-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: mpok5m0qv-nodejs 
+  name: mpok5m0qv-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: mpok5m0qv-nodejs 
